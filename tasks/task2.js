@@ -27,6 +27,19 @@
 
 // TODO (if needed)
 
+function processOrder(orders, currentTimestamp, orderId) {
+    return orders.map(order => {
+        if (order.id === orderId) {
+            return {
+                ...order,
+                timestamp: currentTimestamp,
+                status: "processed"
+            };
+        }
+        return order;
+    });
+}
+
 
 
 

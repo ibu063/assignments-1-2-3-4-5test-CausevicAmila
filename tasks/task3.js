@@ -15,6 +15,9 @@
 
 // TODO
 
+function extractNames(x) {
+    return x.map(person => person.name);
+}
 
 
 
